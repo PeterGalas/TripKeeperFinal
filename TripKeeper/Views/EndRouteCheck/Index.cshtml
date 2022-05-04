@@ -1,0 +1,53 @@
+﻿@model IEnumerable<TripKeeper.Models.EndRouteCheck>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <div class="text-center">
+        <a class="btn btn-success text-white" asp-controller="EndRouteCheck" asp-action="Create">Create New Entry</a>
+    </div>
+    <br />
+<div class="display">
+    <div class="row">
+        <div class="table-responsive">
+            <table id="table_id" class="display responsive nowrap" width="100%">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.Id)</th>
+                        <th>@Html.DisplayNameFor(model => model.Tractor)</th>
+                        <th>@Html.DisplayNameFor(model => model.Date)</th>
+                        <th>@Html.DisplayNameFor(model => model.RouteNumber)</th>
+                        <th>@Html.DisplayNameFor(model => model.DriverSignature)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tractor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.RouteNumber)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DriverSignature)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+     </div>
+</div>
