@@ -2,10 +2,7 @@
 
 ## This app is used for storing a driver’s trip information and how much it pays! 
 
-<h2 align="center">
-  <img src="https://github.com/CodingMikey/TripKeeper/blob/master/sample.gif" alt="Tripkeeper" width="600px" />
-  <br>
-</h2>
+
 
 ## Features
 
@@ -16,7 +13,7 @@
 ⚡️ Table with full pagination, search and more\
 ⚡️ Authorization W/ Custom ApplicationUser properties
 
-To view a demo example, **[click here](https://github.com/CodingMikey/TripKeeper/blob/master/sample.gif)**
+
 
 ## Getting Started 🚀
 
@@ -33,7 +30,7 @@ From your command line, first clone Trip Keeper:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/CodingMikey/TripKeeper.git
+$ git clone https://github.com/PeterGalas/TripKeeper.git
 
 # Go into the repository
 $ cd tripkeeper
@@ -61,7 +58,7 @@ $ Update-Database
 
 ## Authors
 
-- **Michael Galas** - [https://github.com/CodingMikey](https://github.com/CodingMikey)
+- **Peter Galas** - [https://github.com/PeterGalas](https://github.com/PeterGalas)
 
 ## Acknowledgments 🎁
 
