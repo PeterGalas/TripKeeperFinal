@@ -26,7 +26,7 @@ namespace TripKeeper.Models
         public DateTime? EndTime { get; set; }
         public decimal? StartMiles { get; set; } = 0;
         public decimal? EndingMiles { get; set; } = 0;
-        //Calculating total miles on a trip
+        //Calculating total miles on a trip implimenting results
         public decimal Miles
         {
             get
@@ -63,7 +63,7 @@ namespace TripKeeper.Models
         public string Comments { get; set; }
         public string Signature { get; set; }
 
-        //Calculating how much a trip pays based on users input
+        //Calculating how much a trip pays based on users input and variables
         public decimal TotalPay
         {
             get
@@ -107,9 +107,3 @@ namespace TripKeeper.Models
     }
 }
 
-//NOTES TO RESET DATABASE
-
-//    DBCC CHECKIDENT('[TestTable]', RESEED, 0);
-//GO
-
-//DELETE FROM employees
